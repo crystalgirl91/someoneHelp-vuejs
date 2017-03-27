@@ -1,0 +1,267 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot');
+  src:  url('fonts/icomoon.eot') format('embedded-opentype'),
+    url('fonts/icomoon.ttf') format('truetype'),
+    url('fonts/icomoon.woff') format('woff'),
+    url('fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-big-zanting:before {
+  content: "\e948";
+}
+.icon-add-picture:before {
+  content: "\e900";
+}
+.icon-camera:before {
+  content: "\e902";
+}
+.icon-class:before {
+  content: "\e903";
+}
+.icon-close:before {
+  content: "\e904";
+}
+.icon-video-big:before {
+  content: "\e906";
+}
+.icon-video:before {
+  content: "\e907";
+}
+.icon-picture:before {
+  content: "\e908";
+}
+.icon-Photo-album:before {
+  content: "\e90c";
+}
+.icon-neixunshi:before {
+  content: "\e90e";
+}
+.icon-PPT:before {
+  content: "\e909";
+}
+.icon-Word:before {
+  content: "\e90d";
+}
+.icon-lajitong:before {
+  content: "\e94f";
+}
+.icon-collection-shixin:before {
+  content: "\e90a";
+}
+.icon-right:before {
+  content: "\e905";
+}
+.icon-left:before {
+  content: "\e90b";
+}
+.icon-jifenjilu:before {
+  content: "\e901";
+}
+.icon-Gold-coins2:before {
+  content: "\e90f";
+}
+.icon-jifen2:before {
+  content: "\e910";
+}
+.icon-xiaoxi:before {
+  content: "\e911";
+}
+.icon-zaixianrenshu:before {
+  content: "\e912";
+}
+.icon-today-task:before {
+  content: "\e913";
+}
+.icon-my-collection:before {
+  content: "\e914";
+}
+.icon-jifen:before {
+  content: "\e915";
+}
+.icon-Gold:before {
+  content: "\e916";
+}
+.icon-medal:before {
+  content: "\e94e";
+}
+.icon-Multiple-Choice:before {
+  content: "\e950";
+}
+.icon-my-class:before {
+  content: "\e951";
+}
+.icon-my-Qr-code:before {
+  content: "\e952";
+}
+.icon-my-ques-and-ans:before {
+  content: "\e953";
+}
+.icon-my2:before {
+  content: "\e954";
+}
+.icon-Num-of-participants:before {
+  content: "\e955";
+}
+.icon-pause:before {
+  content: "\e956";
+}
+.icon-picture2:before {
+  content: "\e957";
+}
+.icon-pingfen-yixuan:before {
+  content: "\e958";
+}
+.icon-place2:before {
+  content: "\e959";
+}
+.icon-platform:before {
+  content: "\e95a";
+}
+.icon-play2:before {
+  content: "\e95b";
+}
+.icon-Primary-member:before {
+  content: "\e95c";
+}
+.icon-pull-down:before {
+  content: "\e95d";
+}
+.icon-question-and-answer:before {
+  content: "\e95e";
+}
+.icon-ranking:before {
+  content: "\e95f";
+}
+.icon-scanning:before {
+  content: "\e960";
+}
+.icon-sce-member:before {
+  content: "\e961";
+}
+.icon-score-empty:before {
+  content: "\e962";
+}
+.icon-score:before {
+  content: "\e963";
+}
+.icon-search2:before {
+  content: "\e964";
+}
+.icon-share2:before {
+  content: "\e965";
+}
+.icon-Sign-in:before {
+  content: "\e966";
+}
+.icon-sign:before {
+  content: "\e967";
+}
+.icon-time2:before {
+  content: "\e968";
+}
+.icon-video2:before {
+  content: "\e969";
+}
+.icon-voice:before {
+  content: "\e96a";
+}
+.icon-xiaofeijilu2:before {
+  content: "\e96b";
+}
+.icon-xuebi-feiyong:before {
+  content: "\e96c";
+}
+.icon-zan:before {
+  content: "\e96d";
+}
+.icon-zanshangxuebi:before {
+  content: "\e96e";
+}
+.icon-activity:before {
+  content: "\e96f";
+}
+.icon-add-professor:before {
+  content: "\e970";
+}
+.icon-assistant:before {
+  content: "\e971";
+}
+.icon-back2:before {
+  content: "\e972";
+}
+.icon-become-professor:before {
+  content: "\e973";
+}
+.icon-choangzhizhognxin:before {
+  content: "\e974";
+}
+.icon-class2:before {
+  content: "\e975";
+}
+.icon-classmate:before {
+  content: "\e976";
+}
+.icon-close2:before {
+  content: "\e977";
+}
+.icon-collection:before {
+  content: "\e978";
+}
+.icon-comments:before {
+  content: "\e979";
+}
+.icon-cost2:before {
+  content: "\e97a";
+}
+.icon-enter2:before {
+  content: "\e97b";
+}
+.icon-exam:before {
+  content: "\e97c";
+}
+.icon-fenlei:before {
+  content: "\e97d";
+}
+.icon-found:before {
+  content: "\e97e";
+}
+.icon-header:before {
+  content: "\e980";
+}
+.icon-integral-mall:before {
+  content: "\e981";
+}
+.icon-knowledge-base:before {
+  content: "\e983";
+}
+.icon-learnt-knowledge:before {
+  content: "\e984";
+}
+.icon-Level-3-members:before {
+  content: "\e985";
+}
+.icon-Level-4members:before {
+  content: "\e986";
+}
+.icon-Level-5-members:before {
+  content: "\e987";
+}
+

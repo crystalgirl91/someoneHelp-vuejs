@@ -1,0 +1,153 @@
+<template>
+	<m-header title="我的班级" :bg-style="{'borderBottom':'1px solid #d9d9d9'}" ></m-header>
+	<section class="plat_class">
+		<!-- <table class="tabel-card" v-for="item in rows" cellpadding="0" cellspacing="0" border="0">
+			<thead>
+				<th colspan="3" class="card-th"><h3 class="card-title"><p class="card-title-word">{{item.TName}}</p></h3></th>
+			</thead>
+			<tbody class="card-body">
+				<tr v-for="subitem in item.CurriculumGroupList"  v-link="{name:'plat_class_detail',params:{'id':item.PK_TID,'group':subitem.PK_CGID}}">
+					<td class="card-td">
+						<h3 class="title-witharrow"><i class="icon icon-sign font-active"></i>{{subitem.GroupName}}</h3>
+					</td>
+					<td class="card-td">{{subitem.Credit}}</td>
+					<td class="card-td">{{subitem.IsStudy ? "完成" : "未完"}}</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td class="card-foot-td"><span class="margin-5">合格学分：{{item.QualifiedCredit}}</span></td>
+					<td class="card-foot-td" colspan="2"><span class="margin-5">完成学分：{{item.CompleteCredit}}</span></td>
+				</tr>
+			</tfoot>
+		</tabel> -->
+		<table class="mystudent-table" cellpadding="0" cellspacing="0">
+			<thead>
+				<th class="vux-1px-b">班级名称</th>
+				<th class="text-center vux-1px-b">班级排名</th>
+			</thead>
+			<tbody>
+				<tr v-for="item in rows" v-link="{'name':'discover_class_detail',params:{'PK_TID':item.PK_TID}}">
+					<td class="vux-1px-b">{{item.TName}}</td>
+					<td class="text-center vux-1px-b">{{item.Ranking}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+</template>
+<style>
+	.plat_class{
+		padding: .1rem .28rem; 
+		min-height: 100%;
+		background-color: #fff;
+	}
+	/*.tabel-card{
+		background-color: #fff;
+		border-radius: 5px;
+		overflow: hidden;
+		border:1px solid #dfdfdf;
+		width: 100%;
+		padding: 0 .24rem;
+		margin-bottom: .1rem;
+	}
+	.tabel-card .card-th{
+		
+	}
+	.tabel-card .title-witharrow{
+		font-size: .28rem;
+		line-height: .5rem;
+		padding: 0px;
+	}
+	.tabel-card .card-title{
+		padding: .16rem 0;
+		border-bottom: 1px solid #dfdfdf;
+		margin-bottom: .2rem;
+	}
+	.tabel-card .border{
+		border-top: 1px solid #dfdfdf;
+	}
+	.tabel-card .card-title-word{
+		border-left: 2px solid #ff9100;
+		font-size: .34rem;
+		color: #333;
+		padding-left: .1rem;
+		line-height: 1;
+		text-align: left;
+	}
+	.card-foot-td{
+		font-size: .28rem;
+		line-height: .5rem;
+	}
+	.card-foot-td .margin-5.padding{
+		padding-left: .5rem;
+	}
+	.card-foot-td .margin-5{
+		margin-top: .15rem;
+		display: block;
+		border-top: 1px solid #dfdfdf;
+		line-height: 2.2;
+
+	}
+	.tabel-card .card-body{
+	}
+	.tabel-card .card-td{
+		font-size: .28rem;
+		line-height: 2.2;
+	}*/
+
+	.plat_class .mystudent-table {
+		width: 100%;
+		
+		padding-top: .2rem;
+	}
+	
+	.plat_class .mystudent-table th {
+		font-size: .3rem;
+		color: #333;
+		text-align: left;
+		font-weight: normal;
+		line-height: .84rem;
+		vertical-align: middle;
+		border-bottom: 1px solid #dfdfdf;
+	}
+	
+	.plat_class .mystudent-table td {
+		font-size: .28rem;
+		color: #666;
+		line-height: .84rem;
+		vertical-align: middle;
+		border-bottom: 1px solid #dfdfdf;
+	}
+	
+	.plat_class .mystudent-table .icon-dashang {
+		color: #ff9100;
+		font-size: .5rem;
+		vertical-align: middle;
+	}
+</style>
+<script>
+	import MHeader from "../../../components/header.vue"
+	export default{
+		components:{
+			MHeader
+		},
+		data(){
+			return {
+				rows:[],
+			}
+		},
+		methods:{
+			getList:function(){
+				return this.$http.post("/API/Student/GetMyTeamList",{
+					"PageIndex":1,
+					"PageSize":100
+				}).then(res => {
+					this.rows = res.body.Data;
+				})
+			}
+		},
+		ready:function(){
+			this.getList()
+		}
+	}
+</script>

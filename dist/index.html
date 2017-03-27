@@ -1,0 +1,18 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=0"><meta name=apple-mobile-web-app-capable content=yes><title>有人帮</title><link href=/frontPage/dist/static\app.01914ef27bbf9094e83fcd920555c106.css rel=stylesheet></head><body><div id=app></div><script>// 设置根元素font-size
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth >= 750){
+                        docEl.style.fontSize = '100px';
+                    }else{
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);</script><script src=http://res.wx.qq.com/open/js/jweixin-1.0.0.js></script><script type=text/javascript src=/frontPage/dist/static\app.88a8ab6d08f79b21aa7f.js></script></body></html>

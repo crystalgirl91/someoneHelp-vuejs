@@ -1,0 +1,31 @@
+
+.font-base{
+	color: #666;
+}
+.font-base-dark{
+	color: #333;
+}
+.font-active{
+	color: #ff9100 !important;  
+}
+.border-light{
+	border-color: #eaeaea;
+}
+.color-red{
+	color: #ef7260;
+}
+.color-green{
+	color: #00bb9c
+}
+.color-green-light{
+	color: #83d360
+}
+.color-purple{
+	color:#9d55b8
+}
+.color-blue{
+	color:#56abe4 ;
+}
+.color-bg{
+	background-color: #f0f4f3 !important;
+}
